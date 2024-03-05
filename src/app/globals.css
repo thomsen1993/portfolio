@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Kode Mono', monospace;
+}
+
+@layer components {
+
+    h3 {
+        @apply
+        bg-black
+        w-max
+        text-white
+        rounded-md
+        px-2
+        text-xl
+        uppercase
+        group-hover/card:delay-700
+        group-hover/card:bg-red-400
+        transition-all
+    }
+
+    h4 {
+        @apply
+        font-bold
+        text-xl
+    }
+}

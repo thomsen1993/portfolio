@@ -1,0 +1,176 @@
+{
+  "intro": {
+    "title": "Benny Thomsen",
+    "subTitle": "Front-end Webudvikler",
+    "text1": "Jeg er en ung mand på 30 år med passion for front-end webudvikling. Jeg har boet i Danmark i 4 år og har en dansk far og en portugisisk mor. Jeg søger i øjeblikket en virksomhed, hvor jeg kan lave et praktikophold.",
+    "text2": "Jeg har stor erfaring med Next.js, Tailwind og forskellige databasesystemer. Jeg er kreativ, glæde og store vilje til at arbejde inden for dette område kendetegner mig. Jeg ser frem til at bringe mine færdigheder og entusiasme til et nyt professionelt miljø."
+  },
+  "contact": [
+    {
+      "title": "Email",
+      "email": "benny.thomsen20@gmail.com",
+      "icon": "HiOutlineMail"
+    },
+    {
+      "title": "Phone",
+      "phone": "+45 21 22 55 27",
+      "icon": "IoIosPhonePortrait"
+    },
+    {
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/in/benny-thomsen-05687127a/",
+      "icon": "FaLinkedin"
+    },
+    {
+      "title": "Instagram",
+      "link": "https://www.instagram.com/bennythoms/",
+      "icon": "FaInstagram"
+    },
+    {
+      "title": "Facebook",
+      "link": "https://www.facebook.com/BennyThomsen23",
+      "icon": "FaFacebook"
+    },
+    {
+      "title": "GitHub",
+      "link": "https://github.com/thomsen1993",
+      "icon": "FaGithub"
+    }
+  ],
+  "footer": "Yes a footer",
+  "present": {
+    "title": "Under uddannelse",
+    "content": "Er ved at være klar"
+  },
+  "category": {
+    "jobs": [
+      {
+        "id": 1,
+        "headline": "Landmand",
+        "content": "Beja, Portugal",
+        "firma": "Karsten Larsen",
+        "year": ""
+      },
+      {
+        "id": 2,
+        "headline": "Vindmøller",
+        "content": "Sines, Portugal",
+        "firma": "Aerogeradores Portugal SA",
+        "year": ""
+      },
+      {
+        "id": 3,
+        "headline": "Slakter",
+        "content": "Beja, Portugal",
+        "firma": "Intermarche",
+        "year": ""
+      },
+      {
+        "id": 4,
+        "headline": "Brolægger",
+        "content": "Ryomgård, Danmark",
+        "firma": "Gerstrøm",
+        "year": "2019/2021"
+      }
+    ],
+    "skills": [
+      {
+        "id": 1,
+        "headline": "JavaScript/TypeScript OOP",
+        "content": "Advanced skills"
+      },
+      {
+        "id": 2,
+        "headline": "HTML, CSS og Tailwind",
+        "content": "Advanced skills"
+      },
+      {
+        "id": 3,
+        "headline": "Node, NPM og Webpack",
+        "content": "Intermediate skills"
+      },
+      {
+        "id": 4,
+        "headline": "API udvikling via Baas/DBaas",
+        "content": "Jeg kan arbejde med udvikling af API, via forskellige platformsløsninger, såsom Baas Supabase og DBaas MongoDB, både i den nye  NEXT-> API model, og via Express."
+      },
+      {
+        "id": 5,
+        "headline": "GitHub",
+        "content": "Basic skills"
+      },
+      {
+        "id": 6,
+        "headline": "Figma",
+        "content": "Intermediate skills"
+      }
+    ],
+    "education": [
+      {
+        "id": 1,
+        "headline": [
+          {
+            "school": "Hou Maritime idrætsefterskole",
+            "location": "Hov, Danmark"
+          }
+        ],
+        "degree": "9. klasse",
+        "text": "Danks 9. klasse mere fokus på at lære sprog",
+        "links:": [
+          {
+            "online": "",
+            "github": ""
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "headline": [
+          {
+            "school": "D. Manuel I",
+            "location": "Beja, Portugal"
+          }
+        ],
+        "degree": "12. klasse",
+        "text": "Basic skills in HTML, CSS, C++ & computer hardware",
+        "links:": [
+          {
+            "online": "",
+            "github": ""
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "headline": [
+          {
+            "school": "Viden Djurs",
+            "location": "Grennå, Danmark"
+          }
+        ],
+        "degree": "Web Udvikler",
+        "text": "Advanced skills with HTML, CSS & Java Script > Data base - mongoDB, Supabase & AirTable Frameworks > React(next.js) & TailwindCSS",
+        "links:": [
+          {
+            "online": "",
+            "github": ""
+          }
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "title": "Portugues",
+        "degree": "Native"
+      },
+      {
+        "title": "Englesk",
+        "degree": "Advanced"
+      },
+      {
+        "title": "Dansk",
+        "degree": "Intermediate"
+      }
+    ]
+  }
+}
