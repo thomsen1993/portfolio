@@ -10,7 +10,7 @@ const Jobs = () => {
         <SubTitles>
           <h3 className="">Jobs</h3>
           </SubTitles>
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-3 pt-2">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-3 pt-2 relative before:content-[''] before:absolute before:-right-20 before:-top-10 before:bg-slate-200 before:w-52 before:h-52 before:rounded-full before:blur-sm">
           {data.category.jobs.map((jobs, index) => (
             <Card key={index}>
               <p className="font-bold">{jobs.headline}</p>
