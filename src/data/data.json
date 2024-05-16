@@ -161,15 +161,18 @@
     "languages": [
       {
         "title": "Portugues",
-        "degree": "Native"
+        "degree": "Native",
+        "percentage": "100"
       },
       {
         "title": "Englesk",
-        "degree": "Advanced"
+        "degree": "Advanced",
+        "percentage": "80"
       },
       {
         "title": "Dansk",
-        "degree": "Intermediate"
+        "degree": "Intermediate",
+        "percentage": "60"
       }
     ]
   }

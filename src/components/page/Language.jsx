@@ -14,8 +14,12 @@ const Language = () => {
           {data.category.languages.map((event, index) => (
             <Card key={index}>
               <p className="font-bold">{event.title}</p>
-              <span className="font-light">{event.degree}</span>
-              <p>{event.firma}</p>
+                  <span className="font-light">{event.degree}</span>
+
+              <div className="border h-5 w-full">
+                <div className={`bg-black w-[${parseInt(event.percentage)}%] h-full`}>
+                </div>
+              </div>
             </Card>
           ))}
         </div>
