@@ -162,17 +162,20 @@
       {
         "title": "Portugues",
         "degree": "Native",
-        "percentage": "100"
+        "percentage": "100",
+        "color": "green"
       },
       {
         "title": "Englesk",
         "degree": "Advanced",
-        "percentage": "80"
+        "percentage": "80",
+        "color": "yellow"
       },
       {
         "title": "Dansk",
         "degree": "Intermediate",
-        "percentage": "60"
+        "percentage": "60",
+        "color": "red"
       }
     ]
   }

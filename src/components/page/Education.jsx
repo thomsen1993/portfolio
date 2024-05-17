@@ -5,7 +5,6 @@ import Card from "../Card";
 import data from "@/data/data.json";
 import Modal from "../Modal";
 import Button from "../Button";
-import SubTitles from "../SubTitles";
 
 const Education = () => {
   const [modal, setModal] = useState(false);
@@ -23,9 +22,7 @@ const Education = () => {
         <p>{data.intro.text2}</p>
       </div>
       <div className="group/card">
-        <SubTitles>
           <h3>Uddannelse</h3>
-        </SubTitles>
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-3 pt-2 ">
           {data.category.education.map((education, index) => (
             <Card key={index}>

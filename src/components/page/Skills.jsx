@@ -7,7 +7,6 @@ import Modal from "../Modal";
 import Button from "../Button";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
-import SubTitles from "../SubTitles";
 
 const Skills = () => {
   const [modal, setModal] = useState(false);
@@ -21,9 +20,7 @@ const Skills = () => {
   return (
     <div className="pl-5 mt-5">
       <div className="group/card">
-        <SubTitles>
           <h3>Skills</h3>
-        </SubTitles>
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-3 pt-2">
           {data.category.skills.map((skills, index) => (
             <Card key={index}>
