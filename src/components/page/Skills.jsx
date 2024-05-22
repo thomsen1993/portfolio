@@ -18,30 +18,24 @@ const Skills = () => {
   };
 
   return (
-    <div className="pl-5 mt-5">
-      <div className="group/card">
-          <h3>Skills</h3>
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-3 pt-2">
-          {data.category.skills.map((skills, index) => (
-            <Card key={index}>
-              <p className="font-bold">{skills.headline}</p>
-              <div onClick={() => openModal(skills)}>
-                <Button>Læs mere</Button>
-              </div>
-            </Card>
-          ))}
-        </div>
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5">
+      <div>
+        {data.category.skills.map((skills) => (
+          <Card key={skills.id}>
+            <p className="font-bold">{skills.headline}</p>
+            <div onClick={() => openModal(skills)}>
+              <Button>Læs mere</Button>
+            </div>
+          </Card>
+        ))}
       </div>
       {modal && (
-        <div
-          className="fixed top-0 right-0 w-full h-full backdrop-blur-md z-50"
-          onClick={() => setModal(false)}
-        >
-          <Modal>
-            <h4>{selectedSkills.headline}</h4>
-            <p>{selectedSkills.content}</p>
-          </Modal>
-        </div>
+        <Modal>
+          <h4>{selectedSkills.headline}</h4>
+          <ul className="list-disc list-inside">
+            <li>{selectedSkills.content}</li>
+          </ul>
+        </Modal>
       )}
     </div>
   );

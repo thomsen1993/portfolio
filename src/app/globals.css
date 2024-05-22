@@ -6,11 +6,14 @@ body {
     font-family: 'Kode Mono', monospace;
 }
 
-
 h3 {
     @apply bg-black w-max text-white rounded-md px-2 text-xl uppercase
 }
 
 h4 {
     @apply font-bold text-xl
+}
+
+.myButtons {
+    @apply px-3 py-1 rounded-t-md bg-white z-50
 }

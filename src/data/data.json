@@ -1,7 +1,8 @@
 {
   "intro": {
-    "title": "Benny Thomsen",
-    "subTitle": "Front-end Webudvikler",
+    "name": "Benny Thomsen",
+    "job": "Front-end Webudvikler",
+    "title": "Om mig",
     "text1": "Jeg er en ung mand på 30 år med passion for front-end webudvikling. Jeg har boet i Danmark i 4 år og har en dansk far og en portugisisk mor. Jeg søger i øjeblikket en virksomhed, hvor jeg kan lave et praktikophold.",
     "text2": "Jeg har stor erfaring med Next.js, Tailwind og forskellige databasesystemer. Jeg er kreativ, glæde og store vilje til at arbejde inden for dette område kendetegner mig. Jeg ser frem til at bringe mine færdigheder og entusiasme til et nyt professionelt miljø."
   },
@@ -37,10 +38,11 @@
       "icon": "FaGithub"
     }
   ],
-  "footer": "Yes a footer",
-  "present": {
-    "title": "Under uddannelse",
-    "content": "Er ved at være klar"
+  "buttons": {
+    "education": "Uddannlse",
+    "job": "jobs",
+    "skills": "skills",
+    "language": "Sprog"
   },
   "category": {
     "jobs": [
@@ -115,11 +117,9 @@
           }
         ],
         "degree": "9. klasse",
-        "text": "Danks 9. klasse mere fokus på at lære sprog",
-        "links:": [
+        "list": [
           {
-            "online": "",
-            "github": ""
+            "text": "Danks 9. klasse (mere fokus på at lære sprog)"
           }
         ]
       },
@@ -132,16 +132,20 @@
           }
         ],
         "degree": "12. klasse",
-        "text": "Basic skills in HTML, CSS, C++ & computer hardware",
-        "links:": [
+        "list": [
           {
-            "online": "",
-            "github": ""
+            "text": "Basic skills in HTML, CSS"
+          },
+          {
+            "text": "C++"
+          },
+          {
+            "text": "Computer hardware"
           }
         ]
       },
       {
-        "id": 2,
+        "id": 3,
         "headline": [
           {
             "school": "Viden Djurs",
@@ -149,11 +153,15 @@
           }
         ],
         "degree": "Web Udvikler",
-        "text": "Advanced skills with HTML, CSS & Java Script > Data base - mongoDB, Supabase & AirTable Frameworks > React(next.js) & TailwindCSS",
-        "links:": [
+        "list": [
           {
-            "online": "",
-            "github": ""
+            "text": "Advanced skills with HTML, CSS & Java Script"
+          },
+          {
+            "text": "Data base ➡ mongoDB, Supabase & AirTable "
+          },
+          {
+            "text": "Frameworks ➡ React(next.js) & TailwindCSS"
           }
         ]
       }
