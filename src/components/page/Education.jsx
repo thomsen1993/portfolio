@@ -5,6 +5,7 @@ import Card from "../Card";
 import data from "@/data/data.json";
 import Modal from "../Modal";
 import Button from "../Button";
+import Grids from "../Grids";
 
 const Education = () => {
   const [modal, setModal] = useState(false);
@@ -16,15 +17,13 @@ const Education = () => {
   };
 
   return (
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5">
-      <div>
+    <Grids>
+      <div className="flex flex-col gap-5">
         {data.category.education.map((education) => (
           <Card key={education.id}>
-            <p className="font-bold">{education.headline[0].school}</p>
+            <h4 className="">{education.headline[0].school}</h4>
             <p className="text-end">{education.headline[0].location}</p>
-            <div onClick={() => openModal(education)}>
-              <Button>Læs mere</Button>
-            </div>
+            <Button openModal={() => openModal(education)}>Læs mere</Button>
           </Card>
         ))}
       </div>
@@ -38,7 +37,7 @@ const Education = () => {
           </ul>
         </Modal>
       )}
-    </div>
+    </Grids>
   );
 };
 

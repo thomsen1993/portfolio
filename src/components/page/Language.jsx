@@ -1,11 +1,12 @@
 import React from "react";
 import data from "@/data/data.json";
 import Card from "../Card";
+import Grids from "../Grids";
 
 const Language = () => {
   return (
-    <>
-      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-3">
+    <Grids>
+      <div  className="flex flex-col gap-5">
         {data.category.languages.map((event, index) => (
           <Card key={index}>
             <p className="font-bold">{event.title}</p>
@@ -17,14 +18,14 @@ const Language = () => {
                 {event.degree}
               </p>
               <div
-                className="bg-black h-full rounded-r-full"
+                className="bg-slate-300 h-full rounded-r-full"
                 style={{ width: `${parseInt(event.percentage)}%` }}
               ></div>
             </div>
           </Card>
         ))}
       </div>
-    </>
+    </Grids>
   );
 };
 

@@ -20,13 +20,18 @@ export default function Home() {
         alt="Net wave"
         className="fixed top-1/2 -translate-y-1/2 -z-50"
       />
-      <section className="max-w-[1200px] mx-auto mb-10">
+      <section className="grid lg:grid-cols-4 gap-5 max-w-[1200px] lg:mx-auto mx-5 mb-10">
         <Profile />
-        <div>
+        <div className="mt-5 col-span-3">
+          <h2>{data.intro.title}</h2>
+          <p className="pb-3">{data.intro.text1}</p>
+          <p>{data.intro.text2}</p>
+        </div>
+        <div className="mt-10 col-span-3">
           <button
             onClick={() => setActiveSection("education")}
             className={`myButtons ${
-              activeSection === "education" ? "border border-b-0" : "border"
+              activeSection === "education" ? "bg-white/50 text-gray-300" : "bg-transparent"
             }`}
           >
             {data.buttons.education}
@@ -34,7 +39,7 @@ export default function Home() {
           <button
             onClick={() => setActiveSection("jobs")}
             className={`myButtons ${
-              activeSection === "jobs" ? "border-t border-b-0 border-r" : "border-t border-b border-r"
+              activeSection === "jobs" ? "bg-white/50 text-gray-300" : "bg-transparent"
             }`}
           >
             {data.buttons.job}
@@ -42,7 +47,7 @@ export default function Home() {
           <button
             onClick={() => setActiveSection("skills")}
             className={`myButtons ${
-              activeSection === "skills" ? "border-t border-b-0 border-r" : "border-t border-b border-r"
+              activeSection === "skills" ? "bg-white/50 text-gray-300" : "bg-transparent"
             }`}
           >
             {data.buttons.skills}
@@ -50,17 +55,17 @@ export default function Home() {
           <button
             onClick={() => setActiveSection("language")}
             className={`myButtons ${
-              activeSection === "language" ? "border-t border-b-0 border-r" : "border-t border-b border-r"
+              activeSection === "language" ? "bg-white/50 text-gray-300" : "bg-transparent"
             }`}
           >
             {data.buttons.language}
           </button>
-        </div>
-        <div className="border-b border-x p-5">
-          {activeSection === "education" && <Education />}
-          {activeSection === "jobs" && <Jobs />}
-          {activeSection === "skills" && <Skills />}
-          {activeSection === "language" && <Language />}
+          <div className="bg-gradient-to-b from-white/50 rounded-r-3xl rounded-b-3xl py-5 px-5 -z-10">
+            {activeSection === "education" && <Education />}
+            {activeSection === "jobs" && <Jobs />}
+            {activeSection === "skills" && <Skills />}
+            {activeSection === "language" && <Language />}
+          </div>
         </div>
       </section>
     </main>

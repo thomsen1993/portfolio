@@ -49,28 +49,28 @@
       {
         "id": 1,
         "headline": "Landmand",
-        "content": "Beja, Portugal",
+        "location": "Beja, Portugal",
         "firma": "Karsten Larsen",
-        "year": ""
+        "year": "1"
       },
       {
         "id": 2,
         "headline": "Vindmøller",
-        "content": "Sines, Portugal",
+        "location": "Sines, Portugal",
         "firma": "Aerogeradores Portugal SA",
-        "year": ""
+        "year": "1"
       },
       {
         "id": 3,
         "headline": "Slakter",
-        "content": "Beja, Portugal",
+        "location": "Beja, Portugal",
         "firma": "Intermarche",
-        "year": ""
+        "year": "1"
       },
       {
         "id": 4,
         "headline": "Brolægger",
-        "content": "Ryomgård, Danmark",
+        "location": "Ryomgård, Danmark",
         "firma": "Gerstrøm",
         "year": "2019/2021"
       }
@@ -78,32 +78,62 @@
     "skills": [
       {
         "id": 1,
-        "headline": "JavaScript/TypeScript OOP",
+        "headline": [
+          {
+            "title": "JavaScript/TypeScript",
+            "icon": ""
+          }
+        ],
         "content": "Advanced skills"
       },
       {
         "id": 2,
-        "headline": "HTML, CSS og Tailwind",
+        "headline": [
+          {
+            "title": "HTML, CSS og Tailwind",
+            "icon": ""
+          }
+          ],
         "content": "Advanced skills"
       },
       {
         "id": 3,
-        "headline": "Node, NPM og Webpack",
+        "headline": [
+          {
+            "title": "Node, NPM og Webpack",
+            "icon": ""
+            }
+          ],
         "content": "Intermediate skills"
       },
       {
         "id": 4,
-        "headline": "API udvikling via Baas/DBaas",
+        "headline": [
+          {
+            "title": "API udvikling via Baas/DBaas",
+            "icon": ""
+            }
+          ],
         "content": "Jeg kan arbejde med udvikling af API, via forskellige platformsløsninger, såsom Baas Supabase og DBaas MongoDB, både i den nye  NEXT-> API model, og via Express."
       },
       {
         "id": 5,
-        "headline": "GitHub",
+        "headline": [
+          {
+            "title": "GitHub",
+            "icon": "FaGithub"
+            }
+          ],
         "content": "Basic skills"
       },
       {
         "id": 6,
-        "headline": "Figma",
+        "headline": [
+          {
+            "title": "Figma",
+            "icon": ""
+            }
+          ],
         "content": "Intermediate skills"
       }
     ],

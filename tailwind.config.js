@@ -7,12 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      keyframes: {
-        arrow: {
-          '0%': {left: "25rem", opacity: "1"},
-          '100%': {left: 0},
-        },
-      },
+      // colors: {
+      //   primary: 'rgb(var(--primary-color) / <alpha-value>)',
+      //   secondary: 'rgb(var(--secondary-color) / <alpha-value>)',
+      //   tertiary: 'rgb(var(--tertiary-color) / <alpha-value>)',
+      //   quaternary: 'rgb(var(--quaternary-color) / <alpha-value>)',
+      //   quinary: 'rgb(var(--quinary-color) / <alpha-value>)'
+      // },
     },
   },
   plugins: [],

@@ -1,18 +1,22 @@
 import React from "react";
 import Card from "../Card";
 import data from "@/data/data.json";
+import Grids from "../Grids";
 
 const Jobs = () => {
   return (
-    <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-3 pt-2">
-      {data.category.jobs.map((jobs, index) => (
-        <Card key={index}>
-          <p className="font-bold">{jobs.headline}</p>
-          <p>{jobs.firma}</p>
-          <p className="font-light text-end">{jobs.content}</p>
-        </Card>
-      ))}
-    </div>
+    <Grids>
+      <div className="flex flex-col gap-5 max-h-[454px] overflow-hidden overflow-y-scroll">
+        {data.category.jobs.map((jobs, index) => (
+          <Card key={index}>
+            <p className="font-bold text-center">{jobs.headline}</p>
+            <p>{jobs.firma}</p>
+            <p>{jobs.year}</p>
+            <p className="font-light text-end">{jobs.location}</p>
+          </Card>
+        ))}
+      </div>
+    </Grids>
   );
 };
 
