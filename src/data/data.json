@@ -38,12 +38,24 @@
       "icon": "FaGithub"
     }
   ],
-  "buttons": {
-    "education": "Uddannlse",
-    "job": "jobs",
-    "skills": "skills",
-    "language": "Sprog"
-  },
+  "buttons": [
+    {
+      "button": "Uddannlse",
+      "state": "education"
+    },
+    {
+      "button": "jobs",
+      "state": "jobs"
+    },
+    {
+      "button": "skills",
+      "state": "skills"
+    },
+    {
+      "button": "Sprog",
+      "state": "language"
+    }
+  ],
   "category": {
     "jobs": [
       {
@@ -84,7 +96,7 @@
             "icon": ""
           }
         ],
-        "content": "Advanced skills"
+        "list": [{ "text": "Advanced skills" }]
       },
       {
         "id": 2,
@@ -93,8 +105,8 @@
             "title": "HTML, CSS og Tailwind",
             "icon": ""
           }
-          ],
-        "content": "Advanced skills"
+        ],
+        "list": [{ "text": "Advanced skills" }]
       },
       {
         "id": 3,
@@ -102,9 +114,9 @@
           {
             "title": "Node, NPM og Webpack",
             "icon": ""
-            }
-          ],
-        "content": "Intermediate skills"
+          }
+        ],
+        "list": [{ "text": "Intermediate skills" }]
       },
       {
         "id": 4,
@@ -112,9 +124,13 @@
           {
             "title": "API udvikling via Baas/DBaas",
             "icon": ""
-            }
-          ],
-        "content": "Jeg kan arbejde med udvikling af API, via forskellige platformsløsninger, såsom Baas Supabase og DBaas MongoDB, både i den nye  NEXT-> API model, og via Express."
+          }
+        ],
+        "list": [
+          {
+            "text": "Jeg kan arbejde med udvikling af API, via forskellige platformsløsninger, såsom Baas Supabase og DBaas MongoDB, både i den nye  NEXT-> API model, og via Express."
+          }
+        ]
       },
       {
         "id": 5,
@@ -122,9 +138,9 @@
           {
             "title": "GitHub",
             "icon": "FaGithub"
-            }
-          ],
-        "content": "Basic skills"
+          }
+        ],
+        "list": [{ "text": "Basic skills" }]
       },
       {
         "id": 6,
@@ -132,9 +148,9 @@
           {
             "title": "Figma",
             "icon": ""
-            }
-          ],
-        "content": "Intermediate skills"
+          }
+        ],
+        "lsit": [{ "text": "Intermediate skills" }]
       }
     ],
     "education": [
@@ -143,25 +159,21 @@
         "headline": [
           {
             "school": "Hou Maritime idrætsefterskole",
-            "location": "Hov, Danmark"
+            "location": "Hov, Danmark",
+            "degree": "9. klasse"
           }
         ],
-        "degree": "9. klasse",
-        "list": [
-          {
-            "text": "Danks 9. klasse (mere fokus på at lære sprog)"
-          }
-        ]
+        "list": [{ "text": "Danks 9. klasse (mere fokus på at lære sprog)" }]
       },
       {
         "id": 2,
         "headline": [
           {
             "school": "D. Manuel I",
-            "location": "Beja, Portugal"
+            "location": "Beja, Portugal",
+            "degree": "12. klasse"
           }
         ],
-        "degree": "12. klasse",
         "list": [
           {
             "text": "Basic skills in HTML, CSS"
@@ -179,10 +191,10 @@
         "headline": [
           {
             "school": "Viden Djurs",
-            "location": "Grennå, Danmark"
+            "location": "Grennå, Danmark",
+            "degree": "Web Udvikler"
           }
         ],
-        "degree": "Web Udvikler",
         "list": [
           {
             "text": "Advanced skills with HTML, CSS & Java Script"
@@ -200,20 +212,41 @@
       {
         "title": "Portugues",
         "degree": "Native",
-        "percentage": "100",
-        "color": "green"
+        "bar": [
+          {
+            "percentage": "99",
+            "text": "udtaler",
+            "icon": "RiSpeakFill"
+          },
+          {
+            "percentage": "80",
+            "text": "læs",
+            "icon": "FaBookOpenReader"
+          },
+          {
+            "percentage": "80",
+            "text": "læssssssssssss",
+            "icon": "TfiWrite"
+          }
+        ]
       },
       {
         "title": "Englesk",
         "degree": "Advanced",
-        "percentage": "80",
-        "color": "yellow"
+        "bar": [
+          {
+            "percentage": "80"
+          }
+        ]
       },
       {
         "title": "Dansk",
         "degree": "Intermediate",
-        "percentage": "60",
-        "color": "red"
+        "bar": [
+          {
+            "percentage": "60"
+          }
+        ]
       }
     ]
   }

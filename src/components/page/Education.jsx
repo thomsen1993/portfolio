@@ -18,24 +18,22 @@ const Education = () => {
 
   return (
     <Grids>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 max-h-[454px] overflow-hidden overflow-y-scroll px-2 mx-2">
         {data.category.education.map((education) => (
-          <Card key={education.id}>
-            <h4 className="">{education.headline[0].school}</h4>
-            <p className="text-end">{education.headline[0].location}</p>
-            <Button openModal={() => openModal(education)}>Læs mere</Button>
-          </Card>
+          <Card
+            key={education.id}
+            openModal={() => openModal(education)}
+            title={education.headline[0].school}
+            location={education.headline[0].location}
+            degree={education.headline[0].degree}
+          />
         ))}
       </div>
       {modal && (
-        <Modal>
-          <h4>{selectedEducation.headline[0].school}</h4>
-          <ul className="list-disc list-inside">
-            {selectedEducation.list.map((event, index) => (
-              <li key={index}>{event.text}</li>
-            ))}
-          </ul>
-        </Modal>
+        <Modal
+          title={selectedEducation.headline[0].school}
+          li={selectedEducation.list}
+        />
       )}
     </Grids>
   );

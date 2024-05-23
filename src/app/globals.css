@@ -20,10 +20,13 @@ body {
   @apply bg-blue-950 text-gray-300;
 }
 
+h1,
+h2,
+h3,
 h4 {
-  @apply font-bold text-center;
+  @apply font-bold text-center text-[#FCF7F8];
 }
 
 .myButtons {
-  @apply px-3 py-1 rounded-t-md backdrop-blur-sm uppercase;
+  @apply px-3 py-1 border-t border-l last-of-type:border-r border-white/50 rounded-t-md backdrop-blur-sm hover:text-[#FCF7F8] hover:bg-white/50 uppercase;
 }

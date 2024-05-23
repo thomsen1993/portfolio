@@ -20,7 +20,7 @@ export default function Home() {
         alt="Net wave"
         className="fixed top-1/2 -translate-y-1/2 -z-50"
       />
-      <section className="grid lg:grid-cols-4 gap-5 max-w-[1200px] lg:mx-auto mx-5 mb-10">
+      <section className="grid lg:grid-cols-4 gap-5 lg:max-w-[1200px] lg:mx-auto mx-5 mb-10">
         <Profile />
         <div className="mt-5 col-span-3">
           <h2>{data.intro.title}</h2>
@@ -28,39 +28,20 @@ export default function Home() {
           <p>{data.intro.text2}</p>
         </div>
         <div className="mt-10 col-span-3">
-          <button
-            onClick={() => setActiveSection("education")}
-            className={`myButtons ${
-              activeSection === "education" ? "bg-white/50 text-gray-300" : "bg-transparent"
-            }`}
-          >
-            {data.buttons.education}
-          </button>
-          <button
-            onClick={() => setActiveSection("jobs")}
-            className={`myButtons ${
-              activeSection === "jobs" ? "bg-white/50 text-gray-300" : "bg-transparent"
-            }`}
-          >
-            {data.buttons.job}
-          </button>
-          <button
-            onClick={() => setActiveSection("skills")}
-            className={`myButtons ${
-              activeSection === "skills" ? "bg-white/50 text-gray-300" : "bg-transparent"
-            }`}
-          >
-            {data.buttons.skills}
-          </button>
-          <button
-            onClick={() => setActiveSection("language")}
-            className={`myButtons ${
-              activeSection === "language" ? "bg-white/50 text-gray-300" : "bg-transparent"
-            }`}
-          >
-            {data.buttons.language}
-          </button>
-          <div className="bg-gradient-to-b from-white/50 rounded-r-3xl rounded-b-3xl py-5 px-5 -z-10">
+          {data.buttons.map((event, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveSection(event.state)}
+              className={`myButtons ${
+                activeSection === event.state
+                  ? "bg-white/50 text-[#FCF7F8] transition"
+                  : "bg-transparent "
+              }`}
+            >
+              {event.button}
+            </button>
+          ))}
+          <div className="bg-gradient-to-b from-white/50 border border-white/50 rounded-b-3xl py-5  ">
             {activeSection === "education" && <Education />}
             {activeSection === "jobs" && <Jobs />}
             {activeSection === "skills" && <Skills />}

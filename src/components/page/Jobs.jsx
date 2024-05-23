@@ -6,13 +6,16 @@ import Grids from "../Grids";
 const Jobs = () => {
   return (
     <Grids>
-      <div className="flex flex-col gap-5 max-h-[454px] overflow-hidden overflow-y-scroll">
+      <div className="flex flex-col gap-5 max-h-[454px] overflow-hidden overflow-y-scroll px-2 mx-2">
         {data.category.jobs.map((jobs, index) => (
-          <Card key={index}>
-            <p className="font-bold text-center">{jobs.headline}</p>
-            <p>{jobs.firma}</p>
-            <p>{jobs.year}</p>
-            <p className="font-light text-end">{jobs.location}</p>
+          <Card
+            key={index}
+            title={jobs.headline}
+            firma={jobs.firma}
+            year={jobs.year}
+            location={jobs.location}
+          >
+            
           </Card>
         ))}
       </div>
