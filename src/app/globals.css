@@ -30,3 +30,22 @@ h4 {
 .myButtons {
   @apply px-3 py-1 border-t border-l last-of-type:border-r border-white/50 rounded-t-md backdrop-blur-sm hover:text-[#FCF7F8] hover:bg-white/50 uppercase;
 }
+
+@layer components {
+  .shine {
+    animation: shine .5s linear;
+    animation-iteration-count: 2;
+  }
+}
+
+@keyframes shine {
+  0% {
+    top: -10px;
+    left: -60px;
+  }
+
+  100% {
+    top: 50px;
+    left: 50px;
+  }
+}

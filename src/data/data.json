@@ -93,7 +93,14 @@
         "headline": [
           {
             "title": "JavaScript/TypeScript",
-            "icon": ""
+            "icon": [
+              {
+                "name": "TbBrandJavascript"
+              },
+              {
+                "name": "TbBrandTypescript"
+              }
+            ]
           }
         ],
         "list": [{ "text": "Advanced skills" }]
@@ -103,7 +110,17 @@
         "headline": [
           {
             "title": "HTML, CSS og Tailwind",
-            "icon": ""
+            "icon": [
+              {
+                "name": "TbBrandHtml5"
+              },
+              {
+                "name": "TbBrandCss3"
+              },
+              {
+                "name": "TbBrandTailwind"
+              }
+            ]
           }
         ],
         "list": [{ "text": "Advanced skills" }]
@@ -113,7 +130,17 @@
         "headline": [
           {
             "title": "Node, NPM og Webpack",
-            "icon": ""
+            "icon": [
+              {
+                "name": "FaNode"
+              },
+              {
+                "name": "TbBrandNpm"
+              },
+              {
+                "name": "SiWebpack"
+              }
+            ]
           }
         ],
         "list": [{ "text": "Intermediate skills" }]
@@ -123,7 +150,11 @@
         "headline": [
           {
             "title": "API udvikling via Baas/DBaas",
-            "icon": ""
+            "icon": [
+              {
+                "name": "TbApiApp"
+              }
+            ]
           }
         ],
         "list": [
@@ -137,7 +168,11 @@
         "headline": [
           {
             "title": "GitHub",
-            "icon": "FaGithub"
+            "icon": [
+              {
+                "name": "TbBrandGithub"
+              }
+            ]
           }
         ],
         "list": [{ "text": "Basic skills" }]
@@ -147,7 +182,11 @@
         "headline": [
           {
             "title": "Figma",
-            "icon": ""
+            "icon": [
+              {
+                "name": "TbBrandFigma"
+              }
+            ]
           }
         ],
         "lsit": [{ "text": "Intermediate skills" }]
@@ -210,41 +249,68 @@
     ],
     "languages": [
       {
+        "flag": "denmark",
         "title": "Portugues",
         "degree": "Native",
         "bar": [
           {
-            "percentage": "99",
-            "text": "udtaler",
+            "percentage": "95",
+            "text": "Udtaler og forståelse",
             "icon": "RiSpeakFill"
           },
           {
-            "percentage": "80",
-            "text": "læs",
+            "percentage": "87",
+            "text": "Læsning og forståelse",
             "icon": "FaBookOpenReader"
           },
           {
-            "percentage": "80",
-            "text": "læssssssssssss",
+            "percentage": "85",
+            "text": "Skrivning og forståelse",
             "icon": "TfiWrite"
           }
         ]
       },
       {
+        "flag": "denmark",
         "title": "Englesk",
         "degree": "Advanced",
         "bar": [
           {
-            "percentage": "80"
+            "percentage": "80",
+            "text": "Udtaler og forståelse",
+            "icon": "RiSpeakFill"
+          },
+          {
+            "percentage": "75",
+            "text": "Læsning og forståelse",
+            "icon": "FaBookOpenReader"
+          },
+          {
+            "percentage": "75",
+            "text": "Skrivning og forståelse",
+            "icon": "TfiWrite"
           }
         ]
       },
       {
+        "flag": "denmark",
         "title": "Dansk",
         "degree": "Intermediate",
         "bar": [
           {
-            "percentage": "60"
+            "percentage": "70",
+            "text": "Udtaler og forståelse",
+            "icon": "RiSpeakFill"
+          },
+          {
+            "percentage": "65",
+            "text": "Læsning og forståelse",
+            "icon": "FaBookOpenReader"
+          },
+          {
+            "percentage": "50",
+            "text": "Skrivning og forståelse",
+            "icon": "TfiWrite"
           }
         ]
       }

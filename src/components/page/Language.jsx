@@ -8,6 +8,8 @@ import Modal from "../Modal";
 import { RiSpeakFill } from "react-icons/ri";
 import { FaBookOpenReader } from "react-icons/fa6";
 import { TfiWrite } from "react-icons/tfi";
+import denmark from "../../../public/denmark.png"
+import Image from "next/image";
 
 const Language = () => {
   const [modal, setModal] = useState(false);
@@ -26,7 +28,9 @@ const Language = () => {
             title={lang.title}
             degree={lang.degree}
             openModal={() => openModal(lang)}
-          ></Card>
+          >
+            <Image src={`/${lang.flag}`} alt="Flags" width={35} height={15} />
+          </Card>
         ))}
       </div>
       {modal && (
@@ -42,21 +46,23 @@ const Language = () => {
                       height: `${parseInt(event.percentage)}%`,
                     }}
                   >
-                    <div className="flex flex-col justify-between h-full">
+                    <div className="flex flex-col justify-between h-full py-5 px-2">
                       <p className="rotate-180">{event.percentage}%</p>
-                      {event.icon === "RiSpeakFill" && (
-                        <RiSpeakFill className="rotate-180 mx-auto" />
-                      )}
-                      {event.icon === "FaBookOpenReader" && (
-                        <FaBookOpenReader className="rotate-180 mx-auto" />
-                      )}
-                      {event.icon === "TfiWrite" && (
-                        <TfiWrite className="rotate-180 mx-auto" />
-                      )}
+                      <div className="text-xl">
+                        {event.icon === "RiSpeakFill" && (
+                          <RiSpeakFill className="rotate-180 mx-auto" />
+                        )}
+                        {event.icon === "FaBookOpenReader" && (
+                          <FaBookOpenReader className="rotate-180 mx-auto" />
+                        )}
+                        {event.icon === "TfiWrite" && (
+                          <TfiWrite className="rotate-180 mx-auto" />
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>
-                <p>{event.text}</p>
+                <p className="text-center">{event.text}</p>
               </div>
             ))}
           </div>
