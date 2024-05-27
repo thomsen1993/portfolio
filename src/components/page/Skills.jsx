@@ -42,7 +42,7 @@ const Skills = () => {
               {skills.headline[0].icon.map((icon, index) => (
                 <div
                   key={index}
-                  className="text-4xl border rounded-md p-2 mb-2 relative overflow-hidden"
+                  className="text-4xl border border-borderColor rounded-md p-2 mb-2 relative overflow-hidden"
                 >
                   {(icon.name === "TbBrandJavascript" && <TbBrandJavascript />) ||
                     (icon.name === "TbBrandTypescript" && <TbBrandTypescript />) ||

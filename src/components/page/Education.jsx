@@ -4,7 +4,6 @@ import { useState } from "react";
 import Card from "../Card";
 import data from "@/data/data.json";
 import Modal from "../Modal";
-import Button from "../Button";
 import Grids from "../Grids";
 
 const Education = () => {

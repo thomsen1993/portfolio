@@ -92,7 +92,7 @@
         "id": 1,
         "headline": [
           {
-            "title": "JavaScript/TypeScript",
+            "title": "JavaScript & TypeScript",
             "icon": [
               {
                 "name": "TbBrandJavascript"
@@ -249,7 +249,7 @@
     ],
     "languages": [
       {
-        "flag": "denmark",
+        "flag": "/public/portugal.png",
         "title": "Portugues",
         "degree": "Native",
         "bar": [
@@ -271,7 +271,7 @@
         ]
       },
       {
-        "flag": "denmark",
+        "flag": "/public/united-kingdom.png",
         "title": "Englesk",
         "degree": "Advanced",
         "bar": [
@@ -293,7 +293,7 @@
         ]
       },
       {
-        "flag": "denmark",
+        "flag": "/public/denmark.png",
         "title": "Dansk",
         "degree": "Intermediate",
         "bar": [
