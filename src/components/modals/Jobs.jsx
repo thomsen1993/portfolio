@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../Card";
-import data from "@/data/data.json";
+import data from "../../../public/data/data.json";
 import Grids from "../Grids";
 
 const Jobs = () => {
@@ -14,9 +14,8 @@ const Jobs = () => {
             firma={jobs.firma}
             year={jobs.year}
             location={jobs.location}
-          >
-            
-          </Card>
+            icon ={jobs.icon}
+          ></Card>
         ))}
       </div>
     </Grids>

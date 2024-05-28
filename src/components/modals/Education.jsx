@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Card from "../Card";
-import data from "@/data/data.json";
+import data from "../../../public/data/data.json";
 import Modal from "../Modal";
 import Grids from "../Grids";
 
@@ -24,6 +24,7 @@ const Education = () => {
             openModal={() => openModal(education)}
             title={education.headline[0].school}
             location={education.headline[0].location}
+            icon={education.headline[0].icon}
             degree={education.headline[0].degree}
           />
         ))}

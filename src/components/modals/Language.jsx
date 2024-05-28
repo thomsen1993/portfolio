@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import data from "@/data/data.json";
+import data from "../../../public/data/data.json";
 import Card from "../Card";
 import Grids from "../Grids";
 import Modal from "../Modal";
@@ -41,8 +41,9 @@ const Language = () => {
                     className="bg-blue-500 w-max h-full rounded-b-full bar"
                     style={{
                       height: `${parseInt(event.percentage)}%`,
-                      transition: 'height .7s ease-in-out'
+                      transition: 'height .7s',
                     }}
+                    
                   >
                     <div className="flex flex-col justify-between h-full py-5 px-2">
                       <p className="rotate-180">{event.percentage}%</p>

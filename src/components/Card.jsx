@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { CiLocationOn } from "react-icons/ci";
 
 const Card = ({
   children,
@@ -9,8 +10,9 @@ const Card = ({
   text,
   degree,
   firma,
-  location,
   year,
+  location,
+  icon,
 }) => {
   return (
     <div
@@ -19,16 +21,17 @@ const Card = ({
     >
       {children}
       <div className="flex justify-center items-center gap-2  mb-2">
-        {imgSrc && imgSrc.length > 0 ? (
-          <Image src={imgSrc} alt="" width={35} height={35}></Image>
-        ) : null}
-        <h3>{title}</h3>
+        {imgSrc && <Image src={imgSrc} alt="" width={35} height={35}></Image>}
+        <h3>{title && title}</h3>
       </div>
-      <p>{degree}</p>
-      <p className="text-end">{text}</p>
-      <p>{firma}</p>
-      <p>{year}</p>
-      <p className="font-light text-end">{location}</p>
+      <p>{degree && degree}</p>
+      <p className="text-end">{text && text}</p>
+      <p>{firma && firma}</p>
+      <p>{year && year}</p>
+      <div className="flex items-center justify-end gap-2">
+        {icon && <CiLocationOn className="group-hover:animate-bounce" />}
+        <p>{location && location}</p>
+      </div>
       <p className="text-center mt-5 group-hover:text-primary">Læs mere</p>
     </div>
   );

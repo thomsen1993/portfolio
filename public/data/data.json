@@ -62,6 +62,7 @@
         "id": 1,
         "headline": "Landmand",
         "location": "Beja, Portugal",
+        "icon": "CiLocationOn",
         "firma": "Karsten Larsen",
         "year": "1"
       },
@@ -69,6 +70,7 @@
         "id": 2,
         "headline": "Vindmøller",
         "location": "Sines, Portugal",
+        "icon": "CiLocationOn",
         "firma": "Aerogeradores Portugal SA",
         "year": "1"
       },
@@ -76,6 +78,7 @@
         "id": 3,
         "headline": "Slakter",
         "location": "Beja, Portugal",
+        "icon": "CiLocationOn",
         "firma": "Intermarche",
         "year": "1"
       },
@@ -83,6 +86,7 @@
         "id": 4,
         "headline": "Brolægger",
         "location": "Ryomgård, Danmark",
+        "icon": "CiLocationOn",
         "firma": "Gerstrøm",
         "year": "2019/2021"
       }
@@ -199,6 +203,7 @@
           {
             "school": "Hou Maritime idrætsefterskole",
             "location": "Hov, Danmark",
+            "icon": "CiLocationOn",
             "degree": "9. klasse"
           }
         ],
@@ -210,6 +215,7 @@
           {
             "school": "D. Manuel I",
             "location": "Beja, Portugal",
+            "icon": "CiLocationOn",
             "degree": "12. klasse"
           }
         ],
@@ -231,6 +237,7 @@
           {
             "school": "Viden Djurs",
             "location": "Grennå, Danmark",
+            "icon": "CiLocationOn",
             "degree": "Web Udvikler"
           }
         ],
