@@ -8,6 +8,18 @@ import data from "../../../public/data/data.json";
 import { FaLinkedin, FaInstagram, FaFacebook, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoIosPhonePortrait } from "react-icons/io";
+import {
+  TbBrandJavascript,
+  TbBrandTypescript,
+  TbBrandHtml5,
+  TbBrandCss3,
+  TbBrandTailwind,
+  TbBrandNpm,
+  TbApiApp,
+  TbBrandNextjs,
+  TbBrandGithub,
+  TbBrandFigma,
+} from "react-icons/tb";
 
 const Profile = () => {
   const [phoneInfo, setPhoneInfo] = useState(false);
@@ -15,18 +27,23 @@ const Profile = () => {
 
   return (
     <div className="bg-gradient-to-b from-white/50 border border-borderColor shadow-xl shadow-shadowColor rounded-b-3xl lg:row-span-2 lg:col-span-1 col-span-3 p-5">
-      <figure className="rounded-md mb-10">
-        <Image
-          src={bgPhoto}
-          alt=""
-          className="w-full h-80 object-cover object-top border-b-4 border-borderColor"
-        ></Image>
+      <div className="rounded-md mb-10">
+        <div className="relative text-5xl border h-80 overflow-hidden">
+          <TbBrandJavascript className="absolute top-2 -right-[5%] animate-movingMinusX"/>
+          <TbBrandNextjs className="absolute top-1/2 -translate-y-1/2 left-[5%] animate-[throw_2s_ease-in-out_forwards_infinite]"/>
+          <TbBrandHtml5 className="absolute top-1/2 -translate-y-1/2 left-[20%]"/>
+          <TbBrandCss3 className="absolute top-1/2 -translate-y-1/2 left-[40%]"/>
+          <TbBrandTailwind className="absolute top-1/2 -translate-y-1/2 left-[60%]"/>
+          <TbBrandGithub className="absolute top-1/2 -translate-y-1/2 left-[80%]"/>
+          <TbBrandTypescript className="absolute bottom-2 -left-[5%] animate-movingPlusX"/>
+          
+        </div>
         <Image
           src={profilePhoto}
           alt=""
           className="w-52 h-52 -translate-y-1/2 rounded-full bg-gradient-to-t from-slate-50 via-slate-50 to-slate-300 border-4 border-borderColor mx-auto z-10"
         ></Image>
-      </figure>
+      </div>
       <div className="-mt-28">
         <h1 className="uppercase">
           {data.intro.name}
