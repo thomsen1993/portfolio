@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import data from "../../../public/data/data.json";
 import Card from "../Card";
 import Grids from "../Grids";
 import Modal from "../Modal";
@@ -9,7 +8,7 @@ import { RiSpeakFill } from "react-icons/ri";
 import { FaBookOpenReader } from "react-icons/fa6";
 import { TfiWrite } from "react-icons/tfi";
 
-const Language = () => {
+const Language = ({ data }) => {
   const [modal, setModal] = useState(false);
   const [selectedLang, setSelectedLang] = useState(null);
 
@@ -28,6 +27,7 @@ const Language = () => {
             degree={lang.degree}
             openModal={() => openModal(lang)}
             imgSrc={lang.flag.replace("/public", "")}
+            data={data}
           ></Card>
         ))}
       </div>

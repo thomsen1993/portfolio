@@ -1,7 +1,7 @@
 import React from "react";
-import data from "../../../public/data/data.json";
+// import data from "../../../public/data/data.json";
 
-export const About = () => {
+export const About = ({ data }) => {
   return (
     <section className="col-span-3">
       <h2>{data.intro.title}</h2>

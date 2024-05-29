@@ -1,10 +1,10 @@
 {
   "intro": {
     "name": "Benny Thomsen",
-    "job": "Front-end Webudvikler",
-    "title": "Om mig",
-    "text1": "Jeg er en ung mand på 30 år med passion for front-end webudvikling. Jeg har boet i Danmark i 4 år og har en dansk far og en portugisisk mor. Jeg søger i øjeblikket en virksomhed, hvor jeg kan lave et praktikophold.",
-    "text2": "Jeg har stor erfaring med Next.js, Tailwind og forskellige databasesystemer. Jeg er kreativ, glæde og store vilje til at arbejde inden for dette område kendetegner mig. Jeg ser frem til at bringe mine færdigheder og entusiasme til et nyt professionelt miljø."
+    "job": "Desenvolvedor Web Front-end",
+    "title": "Sobre Mim",
+    "text1": "Sou um homem de 30 anos com paixão por desenvolvimento web front-end. Moro na Dinamarca há 4 anos e tenho um pai dinamarquês e uma mãe portuguesa. Atualmente, estou procurando uma empresa onde possa fazer um estágio.",
+    "text2": "Tenho ampla experiência com Next.js, Tailwind e vários sistemas de banco de dados. Sou criativo, alegre e tenho uma grande vontade de trabalhar nesta área. Estou ansioso para levar minhas habilidades e entusiasmo para um novo ambiente profissional."
   },
   "contact": [
     {
@@ -40,55 +40,96 @@
   ],
   "buttons": [
     {
-      "button": "Uddannlse",
+      "button": "Ensino",
       "state": "education"
     },
     {
-      "button": "jobs",
+      "button": "Trabalhos",
       "state": "jobs"
     },
     {
-      "button": "skills",
+      "button": "Habilidades",
       "state": "skills"
     },
     {
-      "button": "Sprog",
+      "button": "Linguas",
       "state": "language"
+    },
+    {
+      "button": "Ler mais",
+      "state": ""
+    },
+    {
+      "button": "Escolhe uma língua: ",
+      "state": ""
     }
   ],
   "category": {
     "jobs": [
       {
         "id": 1,
-        "headline": "Landmand",
-        "location": "Beja, Portugal",
-        "icon": "CiLocationOn",
-        "firma": "Karsten Larsen",
-        "year": "1"
-      },
-      {
-        "id": 2,
-        "headline": "Vindmøller",
+        "headline": "Mecânico de Turbinas Eólicos",
         "location": "Sines, Portugal",
         "icon": "CiLocationOn",
         "firma": "Aerogeradores Portugal SA",
-        "year": "1"
+        "year": "2014/2016",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
       },
       {
-        "id": 3,
-        "headline": "Slakter",
+        "id": 2,
+        "headline": "Talhante",
         "location": "Beja, Portugal",
         "icon": "CiLocationOn",
         "firma": "Intermarche",
-        "year": "1"
+        "year": "2016/2018",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "headline": "Agricultor",
+        "location": "Beja, Portugal",
+        "icon": "CiLocationOn",
+        "firma": "Karsten Larsen",
+        "year": "2018/2019",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
       },
       {
         "id": 4,
-        "headline": "Brolægger",
-        "location": "Ryomgård, Danmark",
+        "headline": "Calceteiro",
+        "location": "Ryomgård, Dinamarca",
         "icon": "CiLocationOn",
         "firma": "Gerstrøm",
-        "year": "2019/2021"
+        "year": "2019/2021",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "headline": "Jardineiro",
+        "location": "DjursLand, Dinamarca",
+        "icon": "CiLocationOn",
+        "firma": "Djurs Sommerland",
+        "year": "2021/2022",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
       }
     ],
     "skills": [
@@ -107,7 +148,7 @@
             ]
           }
         ],
-        "list": [{ "text": "Advanced skills" }]
+        "list": [{ "text": "Habilidades avançadas" }]
       },
       {
         "id": 2,
@@ -127,7 +168,7 @@
             ]
           }
         ],
-        "list": [{ "text": "Advanced skills" }]
+        "list": [{ "text": "Habilidades avançadas" }]
       },
       {
         "id": 3,
@@ -147,7 +188,7 @@
             ]
           }
         ],
-        "list": [{ "text": "Intermediate skills" }]
+        "list": [{ "text": "Habilidades intermediárias" }]
       },
       {
         "id": 4,
@@ -163,7 +204,7 @@
         ],
         "list": [
           {
-            "text": "Jeg kan arbejde med udvikling af API, via forskellige platformsløsninger, såsom Baas Supabase og DBaas MongoDB, både i den nye  NEXT-> API model, og via Express."
+            "text": "Posso trabalhar com desenvolvimento de API através de várias plataformas, como Supabase e MongoDB, tanto no novo modelo NEXT-> API, quanto via Express."
           }
         ]
       },
@@ -179,7 +220,7 @@
             ]
           }
         ],
-        "list": [{ "text": "Basic skills" }]
+        "list": [{ "text": "Habilidades intermediárias" }]
       },
       {
         "id": 6,
@@ -193,7 +234,7 @@
             ]
           }
         ],
-        "lsit": [{ "text": "Intermediate skills" }]
+        "lsit": [{ "text": "Habilidades intermediárias" }]
       }
     ],
     "education": [
@@ -204,10 +245,10 @@
             "school": "Hou Maritime idrætsefterskole",
             "location": "Hov, Danmark",
             "icon": "CiLocationOn",
-            "degree": "9. klasse"
+            "degree": "9ª ano"
           }
         ],
-        "list": [{ "text": "Danks 9. klasse (mere fokus på at lære sprog)" }]
+        "list": [{ "text": "9ª ano dinamarques (com maior foco na aprendizagem da língua)" }]
       },
       {
         "id": 2,
@@ -216,7 +257,7 @@
             "school": "D. Manuel I",
             "location": "Beja, Portugal",
             "icon": "CiLocationOn",
-            "degree": "12. klasse"
+            "degree": "12ª ano"
           }
         ],
         "list": [
@@ -243,10 +284,10 @@
         ],
         "list": [
           {
-            "text": "Advanced skills with HTML, CSS & Java Script"
+            "text": "Habilidades avançadas em HTML, CSS & Java Script"
           },
           {
-            "text": "Data base ➡ mongoDB, Supabase & AirTable "
+            "text": "Banco de dados ➡ mongoDB, Supabase & AirTable "
           },
           {
             "text": "Frameworks ➡ React(next.js) & TailwindCSS"
@@ -256,67 +297,67 @@
     ],
     "languages": [
       {
-        "flag": "/public/portugal.png",
-        "title": "Portugues",
+        "flag": "/public/assets/flags/portugal.png",
+        "title": "Português",
         "degree": "Native",
         "bar": [
           {
             "percentage": "95",
-            "text": "Udtaler og forståelse",
+            "text": "Pronúncia e compreensão",
             "icon": "RiSpeakFill"
           },
           {
             "percentage": "87",
-            "text": "Læsning og forståelse",
+            "text": "Leitura e compreensão",
             "icon": "FaBookOpenReader"
           },
           {
             "percentage": "85",
-            "text": "Skrivning og forståelse",
+            "text": "Escrita e compreensão",
             "icon": "TfiWrite"
           }
         ]
       },
       {
-        "flag": "/public/united-kingdom.png",
-        "title": "Englesk",
+        "flag": "/public/assets/flags/united-kingdom.png",
+        "title": "Inglês",
         "degree": "Advanced",
         "bar": [
           {
             "percentage": "80",
-            "text": "Udtaler og forståelse",
+            "text": "Pronúncia e compreensão",
             "icon": "RiSpeakFill"
           },
           {
             "percentage": "75",
-            "text": "Læsning og forståelse",
+            "text": "Leitura e compreensão",
             "icon": "FaBookOpenReader"
           },
           {
             "percentage": "75",
-            "text": "Skrivning og forståelse",
+            "text": "Escrita e compreensão",
             "icon": "TfiWrite"
           }
         ]
       },
       {
-        "flag": "/public/denmark.png",
-        "title": "Dansk",
+        "flag": "/public/assets/flags/denmark.png",
+        "title": "Dinamarquês",
         "degree": "Intermediate",
         "bar": [
           {
             "percentage": "70",
-            "text": "Udtaler og forståelse",
+            "text": "Pronúncia e compreensão",
             "icon": "RiSpeakFill"
           },
           {
             "percentage": "65",
-            "text": "Læsning og forståelse",
+            "text": "Leitura e compreensão",
             "icon": "FaBookOpenReader"
           },
           {
             "percentage": "50",
-            "text": "Skrivning og forståelse",
+            "text": "Escrita e compreensão",
             "icon": "TfiWrite"
           }
         ]

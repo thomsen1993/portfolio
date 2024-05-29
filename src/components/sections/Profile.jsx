@@ -2,9 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import bgPhoto from "../../../public/beja_torre.png";
-import profilePhoto from "../../../public/benny.png";
-import data from "../../../public/data/data.json";
+import profilePhoto from "../../../public/assets/Benny2.jpg";
 import { FaLinkedin, FaInstagram, FaFacebook, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoIosPhonePortrait } from "react-icons/io";
@@ -14,34 +12,30 @@ import {
   TbBrandHtml5,
   TbBrandCss3,
   TbBrandTailwind,
-  TbBrandNpm,
-  TbApiApp,
   TbBrandNextjs,
-  TbBrandGithub,
-  TbBrandFigma,
+  TbBrandReact ,
 } from "react-icons/tb";
 
-const Profile = () => {
+const Profile = ({ data }) => {
   const [phoneInfo, setPhoneInfo] = useState(false);
   const [emailInfo, setEmailInfo] = useState(false);
 
   return (
-    <div className="bg-gradient-to-b from-white/50 border border-borderColor shadow-xl shadow-shadowColor rounded-b-3xl lg:row-span-2 lg:col-span-1 col-span-3 p-5">
+    <div className="bg-gradient-to-b from-white/50 backdrop-blur-sm border border-borderColor shadow-xl shadow-shadowColor rounded-b-3xl lg:row-span-2 lg:col-span-1 col-span-3 p-5">
       <div className="rounded-md mb-10">
-        <div className="relative text-5xl border h-80 overflow-hidden">
-          <TbBrandJavascript className="absolute top-2 -right-[5%] animate-movingMinusX"/>
-          <TbBrandNextjs className="absolute top-1/2 -translate-y-1/2 left-[5%] animate-[throw_2s_ease-in-out_forwards_infinite]"/>
-          <TbBrandHtml5 className="absolute top-1/2 -translate-y-1/2 left-[20%]"/>
-          <TbBrandCss3 className="absolute top-1/2 -translate-y-1/2 left-[40%]"/>
-          <TbBrandTailwind className="absolute top-1/2 -translate-y-1/2 left-[60%]"/>
-          <TbBrandGithub className="absolute top-1/2 -translate-y-1/2 left-[80%]"/>
-          <TbBrandTypescript className="absolute bottom-2 -left-[5%] animate-movingPlusX"/>
-          
+        <div className="relative text-5xl border h-80 shadow-inner shadow-black overflow-hidden after:content-[''] after:absolute after:-left-[30%] after:w-full after:h-10 after:bg-white/20 after:-rotate-45">
+          <TbBrandJavascript className="absolute top-2 -right-[5%] animate-movingMinusX" />
+          <TbBrandNextjs className="absolute top-[37%] lg:left-[10%] left-[3%] animate-[throw3_4s_ease-in-out_forwards_infinite]" />
+          <TbBrandHtml5 className="absolute top-[80%] left-[25%] animate-[throw_3.5s_ease-in-out_forwards_infinite.3s]" />
+          <TbBrandCss3 className="absolute top-[57%] left-[45%] animate-[throw2_2.5s_ease-in-out_forwards_infinite]" />
+          <TbBrandTailwind className="absolute top-[70%] left-[70%] animate-[throw_1.8s_ease-in-out_forwards_infinite.3s]" />
+          <TbBrandReact  className="absolute top-[40%] lg:left-[75%] left-[90%] animate-[throw3_3s_ease-in-out_forwards_infinite.5s]" />
+          <TbBrandTypescript className="absolute bottom-2 -left-[5%] animate-movingPlusX" />
         </div>
         <Image
           src={profilePhoto}
           alt=""
-          className="w-52 h-52 -translate-y-1/2 rounded-full bg-gradient-to-t from-slate-50 via-slate-50 to-slate-300 border-4 border-borderColor mx-auto z-10"
+          className="w-52 h-52 object-cover -translate-y-1/2 rounded-full bg-gradient-to-t from-slate-50 via-slate-50 to-slate-300 border-4 border-borderColor mx-auto z-10"
         ></Image>
       </div>
       <div className="-mt-28">

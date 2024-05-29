@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import wave from "../../public/net-wave.png";
+import wave from "../../public/assets/net-wave.png";
 import Profile from "@/components/sections/Profile";
 import { About } from "@/components/sections/About";
 import File from "@/components/sections/File";
@@ -17,13 +17,24 @@ export default function Home() {
     { value: "pt", label: "Portuguese", img: "/public/portugal.png" },
   ];
 
-  const [selectedOption, setSelectedOption] = useState("dk");
+  const [selectedOption, setSelectedOption] = useState("en");
 
   const handleOptionClick = (option) => {
-    setSelectedOption(option);
-    // value(option.value);
-    console.log(selectedOption);
+    setSelectedOption(option.value);
   };
+
+  const getData = () => {
+    switch (selectedOption) {
+      case "da":
+        return da;
+      case "pt":
+        return pt;
+      default:
+        return en;
+    }
+  };
+
+  const data = getData();
 
   return (
     <>
@@ -31,16 +42,20 @@ export default function Home() {
         <Image src={wave} alt="Net wave" />
       </figure>
       <main className="grid lg:grid-cols-4 gap-5 lg:max-w-[1200px] lg:mx-auto mx-5 mt-5 sm:mt-10">
-        <Profile />
-        <About />
-        <File />
-        <div className="grid grid-cols-3 col-start-2 col-span-2">
-          <h4 className="col-span-3 mb-2">Choose a language: </h4>
+        <Profile data={data}/>
+        <About data={data}/>
+        <File data={data}/>
+        <div className="grid grid-cols-3 lg:col-start-2 lg:col-span-2 col-start-1 col-span-3 gap-5">
+          <h4 className="col-span-3">{data.buttons[5].button}</h4>
           {options.map((option) => (
             <button
               key={option.value}
               onClick={() => handleOptionClick(option)}
-              className="border border-transparent rounded-md hover:border-borderColor"
+              className={`border rounded-md hover:border-borderColor p-1 active:scale-95 ${
+                selectedOption === option.value 
+                ? "border-borderColor"
+                : "border-transparent"
+              }`}
             >
               <Image
                 src={option.img.replace("/public", "")}

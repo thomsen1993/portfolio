@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import Card from "../Card";
-import data from "../../../public/data/data.json";
+// import data from "../../../public/data/data.json";
 import Modal from "../Modal";
 import Grids from "../Grids";
 
-const Education = () => {
+const Education = ({ data }) => {
   const [modal, setModal] = useState(false);
   const [selectedEducation, setSelectedEducation] = useState(null);
 
@@ -26,6 +26,7 @@ const Education = () => {
             location={education.headline[0].location}
             icon={education.headline[0].icon}
             degree={education.headline[0].degree}
+            data={data}
           />
         ))}
       </div>

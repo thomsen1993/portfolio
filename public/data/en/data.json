@@ -1,10 +1,10 @@
 {
   "intro": {
     "name": "Benny Thomsen",
-    "job": "Front-end Webudvikler",
-    "title": "Om mig",
-    "text1": "Jeg er en ung mand på 30 år med passion for front-end webudvikling. Jeg har boet i Danmark i 4 år og har en dansk far og en portugisisk mor. Jeg søger i øjeblikket en virksomhed, hvor jeg kan lave et praktikophold.",
-    "text2": "Jeg har stor erfaring med Next.js, Tailwind og forskellige databasesystemer. Jeg er kreativ, glæde og store vilje til at arbejde inden for dette område kendetegner mig. Jeg ser frem til at bringe mine færdigheder og entusiasme til et nyt professionelt miljø."
+    "job": "Front-end Web Developer",
+    "title": "About Me",
+    "text1": "I am a 30-year-old man with a passion for front-end web development. I have lived in Denmark for 4 years and have a Danish father and a Portuguese mother. I am currently looking for a company where I can do an internship.",
+    "text2": "I have extensive experience with Next.js, Tailwind, and various database systems. I am creative, joyful, and have a strong will to work in this field. I look forward to bringing my skills and enthusiasm to a new professional environment."
   },
   "contact": [
     {
@@ -40,7 +40,7 @@
   ],
   "buttons": [
     {
-      "button": "Uddannlse",
+      "button": "Education",
       "state": "education"
     },
     {
@@ -52,43 +52,84 @@
       "state": "skills"
     },
     {
-      "button": "Sprog",
+      "button": "languages",
       "state": "language"
+    },
+    {
+      "button": "Read more",
+      "state": ""
+    },
+    {
+      "button": "Choose a language: ",
+      "state": ""
     }
   ],
   "category": {
     "jobs": [
       {
         "id": 1,
-        "headline": "Landmand",
-        "location": "Beja, Portugal",
-        "icon": "CiLocationOn",
-        "firma": "Karsten Larsen",
-        "year": "1"
-      },
-      {
-        "id": 2,
-        "headline": "Vindmøller",
+        "headline": "Wind Turbines",
         "location": "Sines, Portugal",
         "icon": "CiLocationOn",
         "firma": "Aerogeradores Portugal SA",
-        "year": "1"
+        "year": "2014/2016",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
       },
       {
-        "id": 3,
-        "headline": "Slakter",
+        "id": 2,
+        "headline": "Butcher",
         "location": "Beja, Portugal",
         "icon": "CiLocationOn",
         "firma": "Intermarche",
-        "year": "1"
+        "year": "2016/2018",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "headline": "Farmer",
+        "location": "Beja, Portugal",
+        "icon": "CiLocationOn",
+        "firma": "Karsten Larsen",
+        "year": "2018/2019",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
       },
       {
         "id": 4,
-        "headline": "Brolægger",
-        "location": "Ryomgård, Danmark",
+        "headline": "Paver",
+        "location": "Ryomgård, Denmark",
         "icon": "CiLocationOn",
         "firma": "Gerstrøm",
-        "year": "2019/2021"
+        "year": "2019/2021",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "headline": "Gardener",
+        "location": "DjursLand, Denmark",
+        "icon": "CiLocationOn",
+        "firma": "Djurs Sommerland",
+        "year": "2021/2022",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
       }
     ],
     "skills": [
@@ -179,7 +220,7 @@
             ]
           }
         ],
-        "list": [{ "text": "Basic skills" }]
+        "list": [{ "text": "Intermediate skills" }]
       },
       {
         "id": 6,
@@ -204,10 +245,10 @@
             "school": "Hou Maritime idrætsefterskole",
             "location": "Hov, Danmark",
             "icon": "CiLocationOn",
-            "degree": "9. klasse"
+            "degree": "9th grade"
           }
         ],
-        "list": [{ "text": "Danks 9. klasse (mere fokus på at lære sprog)" }]
+        "list": [{ "text": "Danish 9th grade (more focus on learning the language)" }]
       },
       {
         "id": 2,
@@ -216,7 +257,7 @@
             "school": "D. Manuel I",
             "location": "Beja, Portugal",
             "icon": "CiLocationOn",
-            "degree": "12. klasse"
+            "degree": "12th grade"
           }
         ],
         "list": [
@@ -236,9 +277,9 @@
         "headline": [
           {
             "school": "Viden Djurs",
-            "location": "Grennå, Danmark",
+            "location": "Grennå, Denmark",
             "icon": "CiLocationOn",
-            "degree": "Web Udvikler"
+            "degree": "Web Developer"
           }
         ],
         "list": [
@@ -256,67 +297,67 @@
     ],
     "languages": [
       {
-        "flag": "/public/portugal.png",
+        "flag": "/public/assets/flags/portugal.png",
         "title": "Portugues",
         "degree": "Native",
         "bar": [
           {
             "percentage": "95",
-            "text": "Udtaler og forståelse",
+            "text": "Pronunciation and understanding",
             "icon": "RiSpeakFill"
           },
           {
             "percentage": "87",
-            "text": "Læsning og forståelse",
+            "text": "Reading and comprehension",
             "icon": "FaBookOpenReader"
           },
           {
             "percentage": "85",
-            "text": "Skrivning og forståelse",
+            "text": "Writing and comprehension",
             "icon": "TfiWrite"
           }
         ]
       },
       {
-        "flag": "/public/united-kingdom.png",
-        "title": "Englesk",
+        "flag": "/public/assets/flags/united-kingdom.png",
+        "title": "English",
         "degree": "Advanced",
         "bar": [
           {
             "percentage": "80",
-            "text": "Udtaler og forståelse",
+            "text": "Pronunciation and understanding",
             "icon": "RiSpeakFill"
           },
           {
             "percentage": "75",
-            "text": "Læsning og forståelse",
+            "text": "Reading and comprehension",
             "icon": "FaBookOpenReader"
           },
           {
             "percentage": "75",
-            "text": "Skrivning og forståelse",
+            "text": "Writing and comprehension",
             "icon": "TfiWrite"
           }
         ]
       },
       {
-        "flag": "/public/denmark.png",
-        "title": "Dansk",
+        "flag": "/public/assets/flags/denmark.png",
+        "title": "Danish",
         "degree": "Intermediate",
         "bar": [
           {
             "percentage": "70",
-            "text": "Udtaler og forståelse",
+            "text": "Pronunciation and understanding",
             "icon": "RiSpeakFill"
           },
           {
             "percentage": "65",
-            "text": "Læsning og forståelse",
+            "text": "Reading and comprehension",
             "icon": "FaBookOpenReader"
           },
           {
             "percentage": "50",
-            "text": "Skrivning og forståelse",
+            "text": "Writing and comprehension",
             "icon": "TfiWrite"
           }
         ]

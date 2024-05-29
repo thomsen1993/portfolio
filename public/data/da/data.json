@@ -54,33 +54,56 @@
     {
       "button": "Sprog",
       "state": "language"
+    },
+    {
+      "button": "Læs mere",
+      "state": ""
+    },
+    {
+      "button": "Vælge et sprog: ",
+      "state": ""
     }
   ],
   "category": {
     "jobs": [
       {
         "id": 1,
-        "headline": "Landmand",
-        "location": "Beja, Portugal",
-        "icon": "CiLocationOn",
-        "firma": "Karsten Larsen",
-        "year": "1"
-      },
-      {
-        "id": 2,
         "headline": "Vindmøller",
         "location": "Sines, Portugal",
         "icon": "CiLocationOn",
         "firma": "Aerogeradores Portugal SA",
-        "year": "1"
+        "year": "2014/2016",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
       },
       {
-        "id": 3,
+        "id": 2,
         "headline": "Slakter",
         "location": "Beja, Portugal",
         "icon": "CiLocationOn",
         "firma": "Intermarche",
-        "year": "1"
+        "year": "2016/2018",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "headline": "Landmand",
+        "location": "Beja, Portugal",
+        "icon": "CiLocationOn",
+        "firma": "Karsten Larsen",
+        "year": "2018/2019",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
       },
       {
         "id": 4,
@@ -88,7 +111,25 @@
         "location": "Ryomgård, Danmark",
         "icon": "CiLocationOn",
         "firma": "Gerstrøm",
-        "year": "2019/2021"
+        "year": "2019/2021",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "headline": "Gartner",
+        "location": "DjursLand, Danmark",
+        "icon": "CiLocationOn",
+        "firma": "Djurs Sommerland",
+        "year": "2021/2022",
+        "img": [
+          {
+            "src": ""
+          }
+        ]
       }
     ],
     "skills": [
@@ -256,7 +297,7 @@
     ],
     "languages": [
       {
-        "flag": "/public/portugal.png",
+        "flag": "/public/assets/flags/portugal.png",
         "title": "Portugues",
         "degree": "Native",
         "bar": [
@@ -278,7 +319,7 @@
         ]
       },
       {
-        "flag": "/public/united-kingdom.png",
+        "flag": "/public/assets/flags/united-kingdom.png",
         "title": "Englesk",
         "degree": "Advanced",
         "bar": [
@@ -300,7 +341,7 @@
         ]
       },
       {
-        "flag": "/public/denmark.png",
+        "flag": "/public/assets/flags/denmark.png",
         "title": "Dansk",
         "degree": "Intermediate",
         "bar": [

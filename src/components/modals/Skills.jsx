@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Card from "../Card";
-import data from "../../../public/data/data.json";
+// import data from "../../../public/data/data.json";
 import Modal from "../Modal";
 import {
   TbBrandJavascript,
@@ -20,7 +20,7 @@ import { FaNode } from "react-icons/fa";
 import { SiWebpack } from "react-icons/si";
 import Grids from "../Grids";
 
-const Skills = () => {
+const Skills = ({ data }) => {
   const [modal, setModal] = useState(false);
   const [selectedSkills, setSelectedSkills] = useState(null);
 
@@ -37,6 +37,7 @@ const Skills = () => {
             key={skills.id}
             openModal={() => openModal(skills)}
             title={skills.headline[0].title}
+            data={data}
           >
             <div className="flex justify-center gap-2">
               {skills.headline[0].icon.map((icon, index) => (
