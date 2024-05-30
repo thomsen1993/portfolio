@@ -58,17 +58,10 @@ h3, h4 {
   }
 }
 
-@layer components {
-  .bar {
-    animation: bar 1s ease-in-out;
-  }
+::-webkit-scrollbar {
+  @apply bg-transparent w-2
 }
 
-@keyframes bar {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: 100%;
-  }
+::-webkit-scrollbar-thumb  {
+  @apply bg-borderColor hover:bg-white/60 rounded-full
 }

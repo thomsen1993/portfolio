@@ -33,38 +33,33 @@ const Language = ({ data }) => {
       </div>
       {modal && (
         <Modal title={selectedLang.title}>
-          <div className="grid grid-cols-3 h-full gap-5">
-            {selectedLang.bar.map((event, index) => (
-              <div className="flex flex-col" key={index}>
-                <div className="border border-borderColor w-max h-full rounded-b-full rotate-180 mx-auto">
-                  <div
-                    className="bg-blue-500 w-max h-full rounded-b-full bar"
-                    style={{
-                      height: `${parseInt(event.percentage)}%`,
-                      transition: 'height .7s',
-                    }}
-                    
-                  >
-                    <div className="flex flex-col justify-between h-full py-5 px-2">
-                      <p className="rotate-180">{event.percentage}%</p>
-                      <div className="text-xl">
-                        {event.icon === "RiSpeakFill" && (
-                          <RiSpeakFill className="rotate-180 mx-auto" />
-                        )}
-                        {event.icon === "FaBookOpenReader" && (
-                          <FaBookOpenReader className="rotate-180 mx-auto" />
-                        )}
-                        {event.icon === "TfiWrite" && (
-                          <TfiWrite className="rotate-180 mx-auto" />
-                        )}
-                      </div>
+          {selectedLang.bar.map((event, index) => (
+            <div className="grid grid-cols-3 items-center border-b border-borderColor last-of-type:border-none pb-2 mb-2" key={index}>
+              <p>{event.text}</p>
+              <div className="border border-borderColor w-full rounded-r-full col-span-2">
+                <div
+                  className="bg-blue-500 rounded-r-full"
+                  style={{
+                    width: `${parseInt(event.percentage)}%`,
+                    transition: "width .7s",
+                  }}
+                >
+                  <div className="flex justify-between py-1 px-2">
+                    <p className="">{event.percentage}%</p>
+                    <div className="text-xl">
+                      {event.icon === "RiSpeakFill" && (
+                        <RiSpeakFill className="" />
+                      )}
+                      {event.icon === "FaBookOpenReader" && (
+                        <FaBookOpenReader className="" />
+                      )}
+                      {event.icon === "TfiWrite" && <TfiWrite className="" />}
                     </div>
                   </div>
                 </div>
-                <p className="text-center">{event.text}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </Modal>
       )}
     </Grids>

@@ -3,8 +3,16 @@
     "name": "Benny Thomsen",
     "job": "Desenvolvedor Web Front-end",
     "title": "Sobre Mim",
-    "text1": "Sou um homem de 30 anos com paixão por desenvolvimento web front-end. Moro na Dinamarca há 4 anos e tenho um pai dinamarquês e uma mãe portuguesa. Atualmente, estou procurando uma empresa onde possa fazer um estágio.",
-    "text2": "Tenho ampla experiência com Next.js, Tailwind e vários sistemas de banco de dados. Sou criativo, alegre e tenho uma grande vontade de trabalhar nesta área. Estou ansioso para levar minhas habilidades e entusiasmo para um novo ambiente profissional."
+    "text": [
+      {
+        "id": 1,
+        "paragraph": "Sou um homem de 30 anos com paixão por desenvolvimento web front-end. Moro na Dinamarca há 4 anos e tenho um pai dinamarquês e uma mãe portuguesa. Atualmente, estou procurando uma empresa onde possa fazer um estágio."
+      },
+      {
+        "id": 2,
+        "paragraph": "Tenho ampla experiência com Next.js, Tailwind e vários sistemas de banco de dados. Sou criativo, alegre e tenho uma grande vontade de trabalhar nesta área. Estou ansioso para levar minhas habilidades e entusiasmo para um novo ambiente profissional."
+      }
+    ]
   },
   "contact": [
     {
@@ -58,10 +66,12 @@
     {
       "button": "Ler mais",
       "state": ""
-    },
+    }
+  ],
+  "footer": [
     {
-      "button": "Escolhe uma língua: ",
-      "state": ""
+      "text": "Escolha uma língua: ",
+      "update": "Última atualização: Maio 2024"
     }
   ],
   "category": {
@@ -148,7 +158,11 @@
             ]
           }
         ],
-        "list": [{ "text": "Habilidades avançadas" }]
+        "list": [
+          {
+            "text": "Habilidades avançadas"
+          }
+        ]
       },
       {
         "id": 2,
@@ -168,7 +182,20 @@
             ]
           }
         ],
-        "list": [{ "text": "Habilidades avançadas" }]
+        "list": [
+          {
+            "text": "Habilidades avançadas"
+          },
+          {
+            "text": "Uso grid para quase tudo (construção da aplicação e 'resposive')"
+          },
+          {
+            "text": "Confortavel em fazer animações"
+          },
+          {
+            "text": "Creativo"
+          }
+        ]
       },
       {
         "id": 3,
@@ -188,7 +215,11 @@
             ]
           }
         ],
-        "list": [{ "text": "Habilidades intermediárias" }]
+        "list": [
+          {
+            "text": "Habilidades intermediárias"
+          }
+        ]
       },
       {
         "id": 4,
@@ -220,7 +251,11 @@
             ]
           }
         ],
-        "list": [{ "text": "Habilidades intermediárias" }]
+        "list": [
+          {
+            "text": "Habilidades intermediárias"
+          }
+        ]
       },
       {
         "id": 6,
@@ -234,30 +269,48 @@
             ]
           }
         ],
-        "lsit": [{ "text": "Habilidades intermediárias" }]
+        "lsit": [
+          {
+            "text": "Habilidades intermediárias"
+          }
+        ]
       }
     ],
     "education": [
       {
         "id": 1,
+        "image": {
+          "src": "https://www.golfbladet.com/wp-content/uploads/2019/03/Bj%C3%B8rnkj%C3%A6r-e1551781056394.jpg",
+          "srcLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8pXNig1MZBwgiR03AAO5pwjJO-bvmalbl1A&s"
+        },
         "headline": [
           {
             "school": "Hou Maritime idrætsefterskole",
             "location": "Hov, Danmark",
             "icon": "CiLocationOn",
-            "degree": "9ª ano"
+            "degree": "9ª ano",
+            "year": "2009/2010"
           }
         ],
-        "list": [{ "text": "9ª ano dinamarques (com maior foco na aprendizagem da língua)" }]
+        "list": [
+          {
+            "text": "9ª ano dinamarques (com maior foco na aprendizagem da língua)"
+          }
+        ]
       },
       {
         "id": 2,
+        "image": {
+          "src": "https://www.oatual.pt/images/202401131603192035.PNG",
+          "srcLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QZ1D3NIjeFiNuNNdHKSVh85A0ShJtbyR0w&s"
+        },
         "headline": [
           {
             "school": "D. Manuel I",
             "location": "Beja, Portugal",
             "icon": "CiLocationOn",
-            "degree": "12ª ano"
+            "degree": "12ª ano",
+            "year": "2011/2014"
           }
         ],
         "list": [
@@ -274,12 +327,17 @@
       },
       {
         "id": 3,
+        "image": {
+          "src": "https://videndjurs.dk/media/1688/_fsn4550.jpg",
+          "srcLogo": "https://yt3.googleusercontent.com/VF9qlvib4qsDCPDlYZhRg66dDUYXTUyhM21cE84FhHbl25ieGecAZZgxOOdN2rrJWwiEQ0_GcQ=s900-c-k-c0x00ffffff-no-rj"
+        },
         "headline": [
           {
             "school": "Viden Djurs",
             "location": "Grennå, Danmark",
             "icon": "CiLocationOn",
-            "degree": "Web Udvikler"
+            "degree": "Web Udvikler",
+            "year": "2023/2024"
           }
         ],
         "list": [

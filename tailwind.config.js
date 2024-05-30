@@ -17,8 +17,13 @@ module.exports = {
       animation: {
         movingPlusX: 'movingPlusX 10s linear infinite',
         movingMinusX: 'movingMinusX 10s linear infinite',
+        bar: 'bar 1s ease-in-out'
       },
       keyframes: {
+        bar: {
+          '0%': {width: '0%'},
+          '100%': {width: '100%'},
+        },
         movingPlusX: {
           '0%': { transform: 'rotate(0deg)'},
           '100%': {transform: 'rotate(780deg)', left: '105%'},

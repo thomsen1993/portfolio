@@ -26,12 +26,15 @@ const Education = ({ data }) => {
             location={education.headline[0].location}
             icon={education.headline[0].icon}
             degree={education.headline[0].degree}
+            year={education.headline[0].year}
             data={data}
           />
         ))}
       </div>
       {modal && (
         <Modal
+          src={selectedEducation.image.src}
+          srcLogo={selectedEducation.image.srcLogo}
           title={selectedEducation.headline[0].school}
           li={selectedEducation.list}
         />

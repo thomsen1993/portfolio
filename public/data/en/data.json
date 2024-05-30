@@ -3,8 +3,14 @@
     "name": "Benny Thomsen",
     "job": "Front-end Web Developer",
     "title": "About Me",
-    "text1": "I am a 30-year-old man with a passion for front-end web development. I have lived in Denmark for 4 years and have a Danish father and a Portuguese mother. I am currently looking for a company where I can do an internship.",
-    "text2": "I have extensive experience with Next.js, Tailwind, and various database systems. I am creative, joyful, and have a strong will to work in this field. I look forward to bringing my skills and enthusiasm to a new professional environment."
+    "text": [
+      {
+        "paragraph": "I am a 30-year-old man with a passion for front-end web development. I have lived in Denmark for 4 years and have a Danish father and a Portuguese mother. I am currently looking for a company where I can do an internship."
+      },
+      {
+        "paragraph": "I have extensive experience with Next.js, Tailwind, and various database systems. I am creative, joyful, and have a strong will to work in this field. I look forward to bringing my skills and enthusiasm to a new professional environment."
+      }
+    ]
   },
   "contact": [
     {
@@ -58,10 +64,12 @@
     {
       "button": "Read more",
       "state": ""
-    },
+    }
+  ],
+  "footer": [
     {
-      "button": "Choose a language: ",
-      "state": ""
+      "text": "Choose a language: ",
+      "update": "Last updated: May 2024"
     }
   ],
   "category": {
@@ -148,7 +156,11 @@
             ]
           }
         ],
-        "list": [{ "text": "Advanced skills" }]
+        "list": [
+          {
+            "text": "Advanced skills"
+          }
+        ]
       },
       {
         "id": 2,
@@ -168,7 +180,11 @@
             ]
           }
         ],
-        "list": [{ "text": "Advanced skills" }]
+        "list": [
+          {
+            "text": "Advanced skills"
+          }
+        ]
       },
       {
         "id": 3,
@@ -188,7 +204,11 @@
             ]
           }
         ],
-        "list": [{ "text": "Intermediate skills" }]
+        "list": [
+          {
+            "text": "Intermediate skills"
+          }
+        ]
       },
       {
         "id": 4,
@@ -220,7 +240,11 @@
             ]
           }
         ],
-        "list": [{ "text": "Intermediate skills" }]
+        "list": [
+          {
+            "text": "Intermediate skills"
+          }
+        ]
       },
       {
         "id": 6,
@@ -234,30 +258,48 @@
             ]
           }
         ],
-        "lsit": [{ "text": "Intermediate skills" }]
+        "lsit": [
+          {
+            "text": "Intermediate skills"
+          }
+        ]
       }
     ],
     "education": [
       {
         "id": 1,
+        "image": {
+          "src": "https://www.golfbladet.com/wp-content/uploads/2019/03/Bj%C3%B8rnkj%C3%A6r-e1551781056394.jpg",
+          "srcLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8pXNig1MZBwgiR03AAO5pwjJO-bvmalbl1A&s"
+        },
         "headline": [
           {
             "school": "Hou Maritime idrætsefterskole",
             "location": "Hov, Danmark",
             "icon": "CiLocationOn",
-            "degree": "9th grade"
+            "degree": "9th grade",
+            "year": "2009/2010"
           }
         ],
-        "list": [{ "text": "Danish 9th grade (more focus on learning the language)" }]
+        "list": [
+          {
+            "text": "Danish 9th grade (more focus on learning the language)"
+          }
+        ]
       },
       {
         "id": 2,
+        "image": {
+          "src": "https://www.oatual.pt/images/202401131603192035.PNG",
+          "srcLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QZ1D3NIjeFiNuNNdHKSVh85A0ShJtbyR0w&s"
+        },
         "headline": [
           {
             "school": "D. Manuel I",
             "location": "Beja, Portugal",
             "icon": "CiLocationOn",
-            "degree": "12th grade"
+            "degree": "12th grade",
+            "year": "2011/2014"
           }
         ],
         "list": [
@@ -274,12 +316,17 @@
       },
       {
         "id": 3,
+        "image": {
+          "src": "https://videndjurs.dk/media/1688/_fsn4550.jpg",
+          "srcLogo": "https://yt3.googleusercontent.com/VF9qlvib4qsDCPDlYZhRg66dDUYXTUyhM21cE84FhHbl25ieGecAZZgxOOdN2rrJWwiEQ0_GcQ=s900-c-k-c0x00ffffff-no-rj"
+        },
         "headline": [
           {
             "school": "Viden Djurs",
             "location": "Grennå, Denmark",
             "icon": "CiLocationOn",
-            "degree": "Web Developer"
+            "degree": "Web Developer",
+            "year": "2023/2024"
           }
         ],
         "list": [
