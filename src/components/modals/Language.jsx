@@ -34,7 +34,7 @@ const Language = ({ data }) => {
       {modal && (
         <Modal title={selectedLang.title}>
           {selectedLang.bar.map((event, index) => (
-            <div className="grid grid-cols-3 items-center border-b border-borderColor last-of-type:border-none pb-2 mb-2" key={index}>
+            <div className="grid grid-cols-3 items-center border-b border-borderColor last-of-type:border-none pb-2 mb-2 pl-1" key={index}>
               <p>{event.text}</p>
               <div className="border border-borderColor w-full rounded-r-full col-span-2">
                 <div

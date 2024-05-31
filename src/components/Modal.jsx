@@ -17,12 +17,12 @@ const Modal = ({ src, srcLogo, title, li, children }) => {
           />
         </figure>
       )}
-      <div className="mx-5 border-l h-full">
+      <div className="mx-5 border-l border-borderColor h-full">
         {title && <h3 className="py-5">{title}</h3>}
         {li && (
-          <ul className="">
+          <ul>
             {li.map((event, index) => (
-              <li key={index} className="mb-1 border-l-4 border-borderColor">
+              <li key={index} className="border-l-4 border-borderColor mb-1 pl-1">
                 {event.text}
               </li>
             ))}
