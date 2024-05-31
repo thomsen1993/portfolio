@@ -159,6 +159,12 @@
         "list": [
           {
             "text": "Advanced skills"
+          },
+          {
+            "text": "Advanced skills"
+          },
+          {
+            "text": "Advanced skills"
           }
         ]
       },
@@ -224,7 +230,16 @@
         ],
         "list": [
           {
-            "text": "Jeg kan arbejde med udvikling af API, via forskellige platformsløsninger, såsom Baas Supabase og DBaas MongoDB, både i den nye  NEXT-> API model, og via Express."
+            "text": "Jeg kan arbejde med udvikling af API, via forskellige platformsløsninger"
+          },
+          {
+            "text": "Supabase"
+          },
+          {
+            "text": "MongoDB"
+          },
+          {
+            "text": "Både i den nye NEXT -> API model og via Express"
           }
         ]
       },

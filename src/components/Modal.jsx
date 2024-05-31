@@ -1,10 +1,10 @@
 import React from "react";
 
-const Modal = ({ src, srcLogo, title, li, li2, children }) => {
+const Modal = ({ src, srcLogo, title, li, children }) => {
   return (
     <div className="mr-4 md:mt-0 mt-5 md:ml-0 ml-4 lg:col-span-2 border border-border rounded-3xl bg-white/10 overflow-hidden">
       {src && (
-        <figure className="grid mb-2">
+        <figure className="grid">
           <img
             src={src}
             alt=""
@@ -17,12 +17,14 @@ const Modal = ({ src, srcLogo, title, li, li2, children }) => {
           />
         </figure>
       )}
-      <div className="p-5">
-        <h3 className="mb-5">{title}</h3>
+      <div className="mx-5 border-l h-full">
+        {title && <h3 className="py-5">{title}</h3>}
         {li && (
-          <ul className="list-disc list-inside">
+          <ul className="">
             {li.map((event, index) => (
-              <li key={index}>{event.text}</li>
+              <li key={index} className="mb-1 border-l-4 border-borderColor">
+                {event.text}
+              </li>
             ))}
           </ul>
         )}
