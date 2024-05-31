@@ -11,11 +11,25 @@ import pt from "../../public/data/pt/data.json";
 import BgPicture from "@/components/BgPicture";
 
 export default function Home() {
-
   const options = [
-    { value: "en", label: "English", img: "/public/united-kingdom.png" },
-    { value: "da", label: "Danish", img: "/public/denmark.png" },
-    { value: "pt", label: "Portuguese", img: "/public/portugal.png" },
+    {
+      id: 1,
+      value: "en",
+      label: "English",
+      img: "/public/assets/flags/united-kingdom.png",
+    },
+    {
+      id: 2,
+      value: "da",
+      label: "Danish",
+      img: "/public/assets/flags/denmark.png",
+    },
+    {
+      id: 3,
+      value: "pt",
+      label: "Portuguese",
+      img: "/public/assets/flags/portugal.png",
+    },
   ];
 
   const [selectedOption, setSelectedOption] = useState("en");
@@ -39,8 +53,8 @@ export default function Home() {
 
   return (
     <>
-      <BgPicture/>
-      <main className="grid lg:grid-cols-4 gap-5 lg:max-w-[1200px] lg:mx-auto mx-5 mt-5 sm:mt-10">
+      <BgPicture />
+      <main className="grid lg:grid-cols-4 gap-5 lg:max-w-[1200px] lg:mx-auto mt-5">
         <Profile data={data} />
         <About data={data} />
         <File data={data} />
@@ -48,7 +62,7 @@ export default function Home() {
           <h4 className="col-span-3">{data.footer[0].text}</h4>
           {options.map((option) => (
             <button
-              key={option.value}
+              key={option.id}
               onClick={() => handleOptionClick(option)}
               className={`border rounded-md hover:border-borderColor p-1 active:scale-95 ${
                 selectedOption === option.value
@@ -67,7 +81,9 @@ export default function Home() {
             </button>
           ))}
         </div>
-        <p className="flex justify-center items-center">{data.footer[0].update}</p>
+        <p className="flex justify-center items-center">
+          {data.footer[0].update}
+        </p>
       </main>
     </>
   );

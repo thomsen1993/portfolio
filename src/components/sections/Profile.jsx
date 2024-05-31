@@ -26,9 +26,9 @@ const Profile = ({ data }) => {
         <div className="relative text-5xl border border-b-2 border-borderColor h-80 shadow-inner shadow-black overflow-hidden after:content-[''] after:absolute after:-left-[30%] after:w-full after:h-10 after:bg-white/20 after:-rotate-45">
           <TbBrandJavascript className="absolute top-2 -right-[5%] animate-movingMinusX" />
           <TbBrandNextjs className="absolute top-[37%] lg:left-[10%] left-[3%] animate-[throw3_4s_ease-in-out_forwards_infinite]" />
-          <TbBrandHtml5 className="absolute top-[80%] left-[25%] animate-[throw_3.5s_ease-in-out_forwards_infinite.3s]" />
-          <TbBrandCss3 className="absolute top-[57%] left-[45%] animate-[throw2_2.5s_ease-in-out_forwards_infinite]" />
-          <TbBrandTailwind className="absolute top-[70%] left-[70%] animate-[throw_1.8s_ease-in-out_forwards_infinite.3s]" />
+          <TbBrandHtml5 className="absolute top-[80%] left-[25%] animate-[throw_4s_ease-in-out_forwards_infinite.3s]" />
+          <TbBrandCss3 className="absolute top-[57%] left-[45%] animate-[throw2_3s_ease-in-out_forwards_infinite]" />
+          <TbBrandTailwind className="absolute top-[70%] left-[70%] animate-[throw_2s_ease-in-out_forwards_infinite.3s]" />
           <TbBrandReact  className="absolute top-[40%] lg:left-[75%] left-[90%] animate-[throw3_3s_ease-in-out_forwards_infinite.5s]" />
           <TbBrandTypescript className="absolute bottom-2 -left-[5%] animate-movingPlusX" />
         </div>
