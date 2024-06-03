@@ -5,9 +5,11 @@
     "title": "About Me",
     "text": [
       {
+        "id": 1,
         "paragraph": "I am a 30-year-old man with a passion for front-end web development. I have lived in Denmark for 4 years and have a Danish father and a Portuguese mother. I am currently looking for a company where I can do an internship."
       },
       {
+        "id": 2,
         "paragraph": "I have extensive experience with Next.js, Tailwind, and various database systems. I am creative, joyful, and have a strong will to work in this field. I look forward to bringing my skills and enthusiasm to a new professional environment."
       }
     ]
