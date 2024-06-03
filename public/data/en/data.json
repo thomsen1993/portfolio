@@ -11,6 +11,10 @@
       {
         "id": 2,
         "paragraph": "I have extensive experience with Next.js, Tailwind, and various database systems. I am creative, joyful, and have a strong will to work in this field. I look forward to bringing my skills and enthusiasm to a new professional environment."
+      },
+      {
+        "id": 3,
+        "paragraph": ""
       }
     ]
   },
@@ -66,6 +70,10 @@
     {
       "button": "Read more",
       "state": ""
+    },
+    {
+      "button": "More",
+      "state": "Less"
     }
   ],
   "footer": [

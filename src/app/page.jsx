@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <>
       <BgPicture />
-      <main className="grid lg:grid-cols-4 gap-5 lg:max-w-[1200px] lg:mx-auto my-5">
+      <main className="grid lg:grid-cols-4 gap-5 lg:max-w-[1200px] lg:mx-auto my-5 mx-5">
         <Profile data={data} />
         <About data={data} />
         <File data={data} />

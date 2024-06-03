@@ -11,6 +11,10 @@
       {
         "id": 2,
         "paragraph": "Tenho ampla experiência com Next.js, Tailwind e vários sistemas de banco de dados. Sou criativo, alegre e tenho uma grande vontade de trabalhar nesta área. Estou ansioso para levar minhas habilidades e entusiasmo para um novo ambiente profissional."
+      },
+      {
+        "id": 3,
+        "paragraph": ""
       }
     ]
   },
@@ -66,6 +70,10 @@
     {
       "button": "Ler mais",
       "state": ""
+    },
+    {
+      "button": "Mais",
+      "state": "Menos"
     }
   ],
   "footer": [

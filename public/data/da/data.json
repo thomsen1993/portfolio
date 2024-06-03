@@ -8,8 +8,13 @@
         "id": 1,
         "paragraph": "Jeg er en ung mand på 30 år med passion for front-end webudvikling. Jeg har boet i Danmark i 4 år og har en dansk far og en portugisisk mor. Jeg søger i øjeblikket en virksomhed, hvor jeg kan lave et praktikophold."
       },
-      {"id": 2,
+      {
+        "id": 2,
         "paragraph": "Jeg har stor erfaring med Next.js, Tailwind og forskellige databasesystemer. Jeg er kreativ, glæde og store vilje til at arbejde inden for dette område kendetegner mig. Jeg ser frem til at bringe mine færdigheder og entusiasme til et nyt professionelt miljø."
+      },
+      {
+        "id": 3,
+        "paragraph": ""
       }
     ]
   },
@@ -65,6 +70,10 @@
     {
       "button": "Læs mere",
       "state": ""
+    },
+    {
+      "button": "More",
+      "state": "Less"
     }
   ],
   "category": {

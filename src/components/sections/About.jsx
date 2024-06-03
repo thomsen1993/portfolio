@@ -15,12 +15,12 @@ export const About = ({ data }) => {
           </p>
         </>
       ))}
-          {/* <button
-            className="w-full border border-borderColor rounded-b-md"
-            onClick={() => setMore(more === 2 ? 5 : 2)}
+          <button
+            className="w-full border border-borderColor rounded-b-3xl"
+            onClick={() => setMore(more === 2 ? data.intro.text.length : 2)}
           >
-            {more === 2 ? "Mais" : "Menos"}
-          </button> */}
+            {more === 2 ? data.buttons[5].button : data.buttons[5].state}
+          </button>
     </section>
   );
 };
