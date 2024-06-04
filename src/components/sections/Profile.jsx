@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import profilePhoto from "../../../public/assets/Benny2.jpg";
+import profilePhoto from "../../../public/assets/benny.jpg";
 import { FaLinkedin, FaInstagram, FaFacebook, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoIosPhonePortrait } from "react-icons/io";
