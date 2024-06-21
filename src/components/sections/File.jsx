@@ -11,11 +11,11 @@ const File = ({ data }) => {
 
   return (
     <article className="col-span-3 backdrop-blur-sm">
-      {data.buttons.slice(0,4).map((event, index) => (
+      {data.buttons.slice(0, 4).map((event, index) => (
         <button
           key={index}
           onClick={() => setActiveSection(event.state)}
-          className={`px-3 py-1 border-t border-l last-of-type:border-r border-borderColor rounded-t-md backdrop-blur-sm hover:text-primary hover:bg-borderColor uppercase ${
+          className={`px-3 py-1 border-t border-l last-of-type:border-r border-borderColor rounded-t-md backdrop-blur-sm hover:text-primary hover:bg-borderColor uppercase text-sm ${
             activeSection === event.state
               ? "bg-white/50 text-primary"
               : "bg-transparent"
@@ -25,10 +25,10 @@ const File = ({ data }) => {
         </button>
       ))}
       <div className="bg-gradient-to-b from-white/50 border border-borderColor shadow-xl shadow-shadowColor rounded-b-3xl py-5">
-        {activeSection === "education" && <Education data={data}/>}
-        {activeSection === "jobs" && <Jobs data={data}/>}
-        {activeSection === "skills" && <Skills data={data}/>}
-        {activeSection === "language" && <Language data={data}/>}
+        {activeSection === "education" && <Education data={data} />}
+        {activeSection === "jobs" && <Jobs data={data} />}
+        {activeSection === "skills" && <Skills data={data} />}
+        {activeSection === "language" && <Language data={data} />}
       </div>
     </article>
   );

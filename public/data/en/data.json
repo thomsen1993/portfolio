@@ -6,7 +6,7 @@
     "text": [
       {
         "id": 1,
-        "paragraph": "I am a 30-year-old man with a passion for front-end web development. I have lived in Denmark for 4 years and have a Danish father and a Portuguese mother. I am currently looking for a company where I can do an internship."
+        "paragraph": "I am a passionate web designer seeking opportunities to expand my knowledge and experience as a frontend developer. Currently, I am looking for a job/internship that allows me to explore and deepen my understanding of the web development world, especially focusing on technologies that I value and master."
       },
       {
         "id": 2,
@@ -14,7 +14,15 @@
       },
       {
         "id": 3,
-        "paragraph": ""
+        "paragraph": "In addition to my deep interest in web technologies, I am also an enthusiast of the cosmos and the exploration of the universe. This passion for science and the unknown is reflected in my creative and inquisitive approach to problem-solving and creating engaging digital experiences."
+      },
+      {
+        "id": 4,
+        "paragraph": "Experienced Web Developer with a proven track record of creating responsive and visually appealing websites. Proficient in various coding languages and frameworks. Strong problem-solving skills and ability to meet tight deadlines."
+      },
+      {
+        "id": 5,
+        "paragraph": " I appreciate your consideration of my application and look forward to the possibility of contributing to your project."
       }
     ]
   },
@@ -79,7 +87,7 @@
   "footer": [
     {
       "text": "Choose a language: ",
-      "update": "Last updated: May 2024"
+      "update": "Last updated: June 2024"
     }
   ],
   "category": {
